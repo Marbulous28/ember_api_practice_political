@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('results', {path: '/results/:zip'});
   this.route('resultscommittees');
   this.route('subcommittees', {path: 'subcommittees/:committee_id'});
+  this.route('bills');
 });
 
 export default Router;

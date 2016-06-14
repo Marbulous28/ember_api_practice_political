@@ -3,4 +3,7 @@
 {{legislator-zip zipSearch="zipSearch"}}<br>
 
 <h4>Show the chamber committees</h4>
-<button {{action "committeeSearch"}}>Show Committees</button>
+{{#link-to 'resultscommittees' tagName='button'}}Show Committees{{/link-to}}
+<br><br>
+<h4>Show some recent bills</h4>
+{{#link-to 'bills' tagName='button'}}Show Recent Bills{{/link-to}}

@@ -5,8 +5,5 @@ export default Ember.Route.extend({
     zipSearch(params) {
       this.transitionTo('results', params.zip);
     },
-    committeeSearch() {
-      this.transitionTo('resultscommittees');
-    }
   }
 });
