@@ -1,9 +1,16 @@
+<div class="row">
+  <h4>Search for a legislator by zip code</h4>
+  {{legislator-zip zipSearch="zipSearch"}}<br>
+</div>
 
-<h4>Search for a legislator by zip code</h4>
-{{legislator-zip zipSearch="zipSearch"}}<br>
+<div class="row">
+  <h4>Show the chamber committees</h4>
+  {{#link-to 'resultscommittees' class="btn waves-effect waves-purple"}}Show Committees{{/link-to}}
+</div>
 
-<h4>Show the chamber committees</h4>
-{{#link-to 'resultscommittees' tagName='button'}}Show Committees{{/link-to}}
 <br><br>
-<h4>Show some recent bills</h4>
-{{#link-to 'bills' tagName='button'}}Show Recent Bills{{/link-to}}
+
+<div class="row">
+  <h4>Show some recent bills</h4>
+  {{#link-to 'bills' class="btn waves-effect waves-purple"}}Show Recent Bills{{/link-to}}
+</div>

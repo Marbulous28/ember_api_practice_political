@@ -1,7 +1,9 @@
+<br>
 {{#if model}}
   <ul>
     {{#each model as |legislator|}}
-      <li> {{legislator.first_name}} {{legislator.last_name}}: {{legislator.chamber}} - {{legislator.party}}<br>Contact: <a href={{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+      <li> {{legislator.first_name}} {{legislator.last_name}}: {{legislator.chamber}} - {{legislator.party}}<br>Contact: <a href={{legislator.contact_form}}><i class="material-icons">contacts</i> {{legislator.contact_form}}</a></li>
+      <br>
     {{/each}}
   </ul>
 {{else}}

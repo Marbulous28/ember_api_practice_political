@@ -1,6 +1,11 @@
-<form>
-  <label for="zip">Zip Code</label><br>
-  {{input value=zip id="zip"}}
+<div class="col s4">
 
-  <button {{action "zipSearch"}}>Submit</button>
-</form>
+  <form class="input-field">
+
+    {{input value=zip id="zip" type="number" class="validate"}}
+    <label for="zip" data-error="wrong" data-success="it's a number!">Zip Code</label>
+    <br><br>
+    <button class="btn waves-effect waves-purple" {{action "zipSearch"}} type="submit">Submit</button>
+  </form>
+
+</div>
